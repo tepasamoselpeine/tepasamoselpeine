@@ -3,7 +3,7 @@
 Sitio web estático (HTML/CSS/JS) listo para publicar en **GitHub Pages**.
 
 ## 1) Edita lo imprescindible
-- Cambia `TU_NUMERO` en los enlaces de WhatsApp (busca `TU_NUMERO` en todos los archivos).
+- Cambia `TU_NUMERO` en los enlaces  de WhatsApp (busca `TU_NUMERO` en todos los archivos).
 - Cambia email/horario/dirección en `contacto.html`.
 - Sustituye los coches demo en `assets/js/app.js` (const `INVENTORY`).
 
