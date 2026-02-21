@@ -1,0 +1,149 @@
+:root{
+  --bg:#0b0c0f;
+  --panel:#111318;
+  --text:#f5f7fb;
+  --muted:#b8c0d0;
+  --brand:#f5c400; /* amarillo automoción */
+  --line:#232838;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 700px at 20% -10%, rgba(245,196,0,.15), transparent 60%),
+              radial-gradient(900px 600px at 90% 10%, rgba(245,196,0,.10), transparent 55%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.45;
+}
+a{color:inherit}
+.container{max-width:1120px;margin:0 auto;padding:0 18px}
+
+/* Header */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,12,15,.75);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:44px;width:auto;display:block}
+.brand .wordmark{display:flex;flex-direction:column;gap:2px}
+.brand .wordmark strong{letter-spacing:.4px}
+.brand .wordmark span{color:var(--muted);font-size:12px}
+
+.nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.nav a{color:var(--muted);text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.2px;padding:8px 10px;border-radius:10px}
+.nav a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+.nav a.active{background:rgba(245,196,0,.15);color:var(--text);outline:1px solid rgba(245,196,0,.28)}
+
+/* Hero */
+.hero{padding:64px 0 26px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:stretch}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+.hero h1{margin:0 0 10px;font-size:44px;line-height:1.05}
+.hero p{margin:0 0 16px;color:var(--muted);font-size:16px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 0}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-weight:700;font-size:12px;color:var(--text)}
+.badge i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--brand)}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 14px;border-radius:12px;
+  text-decoration:none;font-weight:900;letter-spacing:.2px;
+  border:1px solid rgba(255,255,255,.10);
+}
+.btn-primary{background:var(--brand);color:#111;border-color:rgba(0,0,0,.25)}
+.btn-primary:hover{filter:brightness(1.03)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--text)}
+.btn-ghost:hover{background:rgba(255,255,255,.09)}
+
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.kpi{padding:12px;border-radius:14px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.06)}
+.kpi b{display:block;font-size:18px}
+.kpi span{color:var(--muted);font-size:12px}
+
+/* Sections */
+.section{padding:22px 0}
+.section h2{margin:0 0 10px;font-size:22px}
+.section p.lead{margin:0 0 12px;color:var(--muted)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.feature{padding:14px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+.feature h3{margin:0 0 6px;font-size:15px}
+.feature p{margin:0;color:var(--muted);font-size:13px}
+
+/* Inventory */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 14px}
+.input, select{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.10);
+  color:var(--text);
+  padding:10px 12px;border-radius:12px;
+  outline:none;
+}
+.input::placeholder{color:rgba(184,192,208,.75)}
+
+.cars{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.car{
+  overflow:hidden;
+  border-radius:16px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+}
+.car .thumb{
+  aspect-ratio: 16/10;
+  background:linear-gradient(135deg, rgba(245,196,0,.22), rgba(255,255,255,.04));
+  display:flex;align-items:center;justify-content:center;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.car .thumb span{color:rgba(245,247,251,.9);font-weight:900;letter-spacing:.2px}
+.car .body{padding:12px}
+.car .title{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.car h3{margin:0;font-size:15px}
+.price{font-weight:900;color:var(--brand)}
+.meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;color:var(--muted);font-size:12px}
+.meta .pill{padding:6px 8px;border-radius:999px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.06)}
+.car .actions{display:flex;gap:10px;margin-top:12px}
+.car .actions a{flex:1}
+
+/* Footer */
+.footer{margin-top:26px;border-top:1px solid rgba(255,255,255,.06);padding:22px 0;color:var(--muted);font-size:13px}
+.footer a{color:var(--muted)}
+.footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
+.small{font-size:12px;color:var(--muted)}
+
+/* WhatsApp floating */
+.wa{
+  position:fixed;right:16px;bottom:16px;z-index:80;
+  display:flex;align-items:center;gap:10px;
+  padding:12px 14px;border-radius:999px;
+  background:rgba(245,196,0,.95);
+  color:#111;text-decoration:none;font-weight:900;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+.wa:hover{filter:brightness(1.03)}
+.wa .dot{width:10px;height:10px;border-radius:50%;background:#111;opacity:.25}
+
+/* Responsive */
+@media (max-width: 920px){
+  .hero-grid{grid-template-columns:1fr}
+  .cars{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:1fr}
+  .footer .cols{grid-template-columns:1fr}
+  .brand .wordmark{display:none}
+}
+@media (max-width: 560px){
+  .hero h1{font-size:34px}
+  .cars{grid-template-columns:1fr}
+  .kpis{grid-template-columns:1fr}
+}

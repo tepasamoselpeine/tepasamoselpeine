@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <style>
+      .s{stroke:#111;stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <circle cx="128" cy="128" r="104" class="s"/>
+  <!-- comb -->
+  <path d="M76 104h104" class="s"/>
+  <path d="M92 104v56" class="s"/>
+  <path d="M112 104v56" class="s"/>
+  <path d="M132 104v56" class="s"/>
+  <path d="M152 104v56" class="s"/>
+  <path d="M172 104v56" class="s"/>
+  <!-- slash -->
+  <path d="M78 178 178 78" class="s"/>
+</svg>

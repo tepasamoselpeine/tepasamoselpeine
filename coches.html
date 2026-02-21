@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coches en venta · tepasamoselpeine.com</title>
+  <meta name="description" content="Vehículos de ocasión con garantía y financiación. Transparencia total: aquí no te pasamos el peine." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-dark.png" alt="tepasamoselpeine.com" onerror="this.src='assets/img/brandboard2.png'" />
+        <div class="wordmark"><strong>tepasamoselpeine.com</strong><span>Sin sorpresas</span></div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a class="active" href="coches.html">Coches</a>
+        <a href="vende-tu-coche.html">Vende tu coche</a>
+        <a href="sin-peine.html">Sin peine</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 style="margin:0 0 8px">Coches en venta</h1>
+      <p class="lead">Demo de inventario (luego lo sustituyes). <b data-count></b></p>
+
+      <div class="filters">
+        <input class="input" data-q placeholder="Buscar (marca, modelo...)" />
+        <select data-fuel>
+          <option value="all">Combustible</option>
+          <option>Gasolina</option>
+          <option>Diésel</option>
+          <option>Híbrido</option>
+        </select>
+        <select data-max>
+          <option value="0">Precio máx.</option>
+          <option value="10000">10.000 €</option>
+          <option value="15000">15.000 €</option>
+          <option value="20000">20.000 €</option>
+          <option value="30000">30.000 €</option>
+        </select>
+        <a class="btn btn-primary" href="contacto.html#whatsapp">Pedir asesoramiento</a>
+      </div>
+
+      <div class="cars" data-cars></div>
+
+      <div class="card" style="margin-top:14px">
+        <h2 style="margin:0 0 8px">¿No ves lo que buscas?</h2>
+        <p class="lead" style="margin:0 0 12px">Dinos presupuesto, uso y etiqueta. Te proponemos opciones sin “peine”.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contacto.html#whatsapp">WhatsApp</a>
+          <a class="btn btn-ghost" href="vende-tu-coche.html">Vender mi coche</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container cols">
+      <div><b>tepasamoselpeine.com</b><br/><span class="small">Rubí · Barcelona · Cataluña</span></div>
+      <div><b>Legal</b><br/><a href="legal.html">Aviso legal</a><br/><a href="privacidad.html">Privacidad</a><br/><a href="cookies.html">Cookies</a></div>
+      <div><b>Contacto</b><br/><a href="contacto.html">Formulario</a><br/><a href="contacto.html#whatsapp">WhatsApp</a></div>
+    </div>
+  </footer>
+
+  <a class="wa" id="whatsapp" href="https://wa.me/34TU_NUMERO?text=Hola%2C%20quiero%20info%20de%20vuestros%20coches." target="_blank" rel="noopener"><span class="dot"></span> WhatsApp</a>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
